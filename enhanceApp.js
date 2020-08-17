@@ -1,6 +1,18 @@
 import Vuex from 'vuex'
-import { DruxtRouterStore } from 'druxt-router'
-import { DruxtSchemaStore } from 'druxt-schema'
+
+/**
+ * Import module.
+ *
+ * @param {string} module - The module to be imported.
+ * @param {object} siteData - The Vuepress site configuration.
+ */
+const importModule = (module, siteData) => {
+  if (siteData.base.indexOf(module) === 1) {
+    return false
+  }
+
+  return import('druxt-router').then(m => m.DruxtRouterStore)
+}
 
 export default ({ Vue, options, router, siteData }) => {
   // Setup Vuex.
@@ -8,15 +20,20 @@ export default ({ Vue, options, router, siteData }) => {
   const store = new Vuex.Store({})
 
   // Setup Druxt.js Router.
-  DruxtRouterStore({ store })
-  store.$druxtRouter = () => ({
-    getResource: async (query = {}) => require(`./data/resources/${query.type}/${query.id}.json`)
-  })
+  const DruxtRouterStore = importModule('druxt-router', siteData)
+  if (DruxtRouterStore) {
+    store.$druxtRouter = () => ({
+      getResource: async (query = {}) => require(`./data/resources/${query.type}/${query.id}.json`)
+    })
+  }
 
-  // Setup Druxt.js Router.
-  DruxtSchemaStore({ store })
-  store.$druxtSchema = {
-    import: async id => require(`./data/schemas/${id}.json`)
+  // Setup Druxt.js Schema.
+  const DruxtSchemaStore = importModule('druxt-schema', siteData)
+  if (DruxtSchemaStore) {
+    DruxtSchemaStore({ store })
+    store.$druxtSchema = {
+      import: async id => require(`./data/schemas/${id}.json`)
+    }
   }
 
   Vue.mixin({ store })

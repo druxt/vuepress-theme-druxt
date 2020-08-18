@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-druxt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vuepress theme for Druxt.js documentation.",
   "main": "index.js",
   "scripts": {
@@ -22,10 +22,9 @@
   "homepage": "https://github.com/druxt/vuepress-theme-druxt#readme",
   "dependencies": {
     "@vuepress/theme-default": "^1.5.3",
+    "druxt-router": "^0.15.0",
+    "druxt-schema": "^0.4.0",
     "vuepress-plugin-live": "^1.6.0"
   },
-  "devDependencies": {
-    "druxt-router": "^0.15.0",
-    "druxt-schema": "^0.4.0"
-  }
+  "devDependencies": {}
 }

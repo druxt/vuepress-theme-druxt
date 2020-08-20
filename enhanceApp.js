@@ -1,12 +1,20 @@
 import Vuex from 'vuex'
+import { DruxtEntityComponents } from 'druxt-entity'
 import { DruxtRouterStore } from 'druxt-router'
 import { DruxtSchemaStore } from 'druxt-schema'
 import md5 from 'md5'
+
+const { DruxtEntity, DruxtField, DruxtFieldTextDefault } = DruxtEntityComponents
 
 export default async ({ Vue, options, router, siteData }) => {
   // Setup Vuex.
   Vue.use(Vuex)
   const store = new Vuex.Store({})
+
+  // Setup Druxt.js Entity.
+  Vue.component(DruxtEntity.name, DruxtEntity)
+  Vue.component(DruxtField.name, DruxtField)
+  Vue.component(DruxtFieldTextDefault.name, DruxtFieldTextDefault)
 
   // Setup Druxt.js Router.
   DruxtRouterStore({ store })

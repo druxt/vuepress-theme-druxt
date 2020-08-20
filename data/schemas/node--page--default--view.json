@@ -61,6 +61,6 @@
    "mode": "default",
    "schemaType": "view",
    "filter": [],
-   "href": "http://drupal-9.druxt.localhost/en/jsonapi/node/page"
+   "href": "http://example.com/en/jsonapi/node/page"
   }
 }

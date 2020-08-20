@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-druxt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vuepress theme for Druxt.js documentation.",
   "main": "index.js",
   "scripts": {

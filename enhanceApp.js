@@ -1,6 +1,7 @@
 import Vuex from 'vuex'
 import { DruxtRouterStore } from 'druxt-router'
 import { DruxtSchemaStore } from 'druxt-schema'
+import md5 from 'md5'
 
 export default async ({ Vue, options, router, siteData }) => {
   // Setup Vuex.
@@ -10,7 +11,8 @@ export default async ({ Vue, options, router, siteData }) => {
   // Setup Druxt.js Router.
   DruxtRouterStore({ store })
   store.$druxtRouter = () => ({
-    getResource: async (query = {}) => require(`./data/resources/${query.type}/${query.id}.json`)
+    getResource: async query => require(`./data/resources/${query.type}/${query.id}.json`),
+    getResources: async (resource, query) => require('./data/resources/' + resource + '/' + md5(query) + '.json')
   })
 
   // Setup Druxt.js Schema.

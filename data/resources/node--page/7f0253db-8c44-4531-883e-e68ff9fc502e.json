@@ -14,7 +14,7 @@
     "id":"7f0253db-8c44-4531-883e-e68ff9fc502e",
     "links":{
       "self":{
-        "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e?resourceVersion=id%3A36"
+        "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e?resourceVersion=id%3A36"
       }
     },
     "attributes":{
@@ -54,10 +54,10 @@
         },
         "links":{
           "related":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/node_type?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/node_type?resourceVersion=id%3A36"
           },
           "self":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/node_type?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/node_type?resourceVersion=id%3A36"
           }
         }
       },
@@ -68,10 +68,10 @@
         },
         "links":{
           "related":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/revision_uid?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/revision_uid?resourceVersion=id%3A36"
           },
           "self":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/revision_uid?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/revision_uid?resourceVersion=id%3A36"
           }
         }
       },
@@ -82,10 +82,10 @@
         },
         "links":{
           "related":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/uid?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/uid?resourceVersion=id%3A36"
           },
           "self":{
-            "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/uid?resourceVersion=id%3A36"
+            "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e/relationships/uid?resourceVersion=id%3A36"
           }
         }
       }
@@ -93,7 +93,7 @@
   },
   "links":{
     "self":{
-      "href":"http://drupal-9.druxt.localhost/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e"
+      "href":"http://example.com/en/jsonapi/node/page/7f0253db-8c44-4531-883e-e68ff9fc502e"
     }
   }
 }

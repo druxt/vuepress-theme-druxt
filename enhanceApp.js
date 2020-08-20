@@ -15,6 +15,13 @@ export default async ({ Vue, options, router, siteData }) => {
     getResources: async (resource, query) => require('./data/resources/' + resource + '/' + md5(query) + '.json')
   })
 
+  // Mock and set route to '/node/1'.
+  store.commit('druxtRouter/addRoute', {
+    path: '/node/1',
+    route: require('./data/routes/' + md5('/node/1') + '.json')
+  })
+  store.commit('druxtRouter/setRoute', '/node/1')
+
   // Setup Druxt.js Schema.
   DruxtSchemaStore({ store })
   store.$druxtSchema = {

@@ -1,6 +1,6 @@
 <template>
   <div v-if="block">
-    <img :src="logo" alt="Logo" class="logo" />
+    <img :src="$themeConfig.logo" alt="Logo" class="logo" />
     <h4>Nuxt.js in the front, Drupal in the back.</h4>
   </div>
 </template>
@@ -11,13 +11,7 @@ import { DruxtBlocksBlockMixin } from 'druxt-blocks'
 export default {
   name: 'DruxtBlockSystemBrandingBlock',
 
-  mixins: [DruxtBlocksBlockMixin],
-
-  computed: {
-    logo() {
-      return this.$site.base + this.$themeConfig.logo
-    }
-  }
+  mixins: [DruxtBlocksBlockMixin]
 }
 </script>
 

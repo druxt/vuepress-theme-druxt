@@ -20,7 +20,7 @@ export default async ({ Vue, options, router, siteData }) => {
   DruxtRouterStore({ store })
   store.$druxtRouter = () => ({
     getResource: async query => require(`./data/resources/${query.type}/${query.id}.json`),
-    getResources: async (resource, query) => require('./data/resources/' + resource + '/' + md5(query.getQueryString()) + '.json')
+    getResources: async (resource, query) => require('./data/resources/' + resource + '/' + md5(query) + '.json')
   })
 
   // Mock and set route to '/node/1'.

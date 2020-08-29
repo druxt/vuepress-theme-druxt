@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/druxt/vuepress-theme-druxt#readme",
   "dependencies": {
-    "@vuepress/theme-default": "^1.5.3",
-    "druxt-blocks": "^0.4.0",
-    "druxt-entity": "^0.5.2",
-    "druxt-router": "^0.15.0",
-    "druxt-schema": "^0.4.0",
+    "@vuepress/theme-default": "^1.5.4",
+    "druxt-blocks": "^0.4.1",
+    "druxt-entity": "^0.6.1",
+    "druxt-router": "^0.16.0",
+    "druxt-schema": "^0.5.1",
     "md5": "^2.3.0",
     "vuepress-plugin-live": "^1.6.0"
   },

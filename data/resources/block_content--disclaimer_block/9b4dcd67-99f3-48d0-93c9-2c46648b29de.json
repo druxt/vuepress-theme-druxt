@@ -1,0 +1,76 @@
+{
+  "type":"block_content--disclaimer_block",
+  "id":"9b4dcd67-99f3-48d0-93c9-2c46648b29de",
+  "links":{
+    "self":{
+      "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de"
+    }
+  },
+  "attributes":{
+    "drupal_internal__id":1,
+    "drupal_internal__revision_id":1,
+    "langcode":"en",
+    "revision_created":"2020-08-18T02:35:14+00:00",
+    "revision_log":null,
+    "status":true,
+    "info":"Umami Disclaimer",
+    "changed":"2020-08-18T02:35:14+00:00",
+    "reusable":true,
+    "default_langcode":true,
+    "revision_translation_affected":true,
+    "content_translation_source":"und",
+    "content_translation_outdated":false,
+    "content_translation_created":"2020-08-18T02:35:14+00:00",
+    "field_copyright":{
+      "value":"&copy; 2020 Terms & Conditions",
+      "format":"basic_html",
+      "processed":"<p>© 2020 Terms &amp; Conditions</p>\n"
+    },
+    "field_disclaimer":{
+      "value":"<strong>Umami Magazine & Umami Publications</strong> is a fictional magazine and publisher for illustrative purposes only.",
+      "format":"basic_html",
+      "processed":"<p><strong>Umami Magazine &amp; Umami Publications</strong> is a fictional magazine and publisher for illustrative purposes only.</p>\n"
+    }
+  },
+  "relationships":{
+    "block_content_type":{
+      "data":{
+        "type":"block_content_type--block_content_type",
+        "id":"869d0e7c-7aef-4ae7-b528-e3e2068770fc"
+      },
+      "links":{
+        "related":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/block_content_type"
+        },
+        "self":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/relationships/block_content_type"
+        }
+      }
+    },
+    "revision_user":{
+      "data":null,
+      "links":{
+        "related":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/revision_user"
+        },
+        "self":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/relationships/revision_user"
+        }
+      }
+    },
+    "content_translation_uid":{
+      "data":{
+        "type":"user--user",
+        "id":"7046ff8c-eeee-4ac1-b130-2a3c81f47ac8"
+      },
+      "links":{
+        "related":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/content_translation_uid"
+        },
+        "self":{
+          "href":"https://example.com/en/jsonapi/block_content/disclaimer_block/9b4dcd67-99f3-48d0-93c9-2c46648b29de/relationships/content_translation_uid"
+        }
+      }
+    }
+  }
+}

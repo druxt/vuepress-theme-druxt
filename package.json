@@ -1,0 +1,33 @@
+{
+  "name": "vuepress-theme-druxt",
+  "version": "0.3.2",
+  "description": "Vuepress theme for Druxt.js documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/druxt/vuepress-theme-druxt.git"
+  },
+  "keywords": [
+    "vuepress",
+    "druxtjs"
+  ],
+  "author": "Stuart Clark <stuart@realityloop.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/druxt/vuepress-theme-druxt/issues"
+  },
+  "homepage": "https://github.com/druxt/vuepress-theme-druxt#readme",
+  "dependencies": {
+    "@vuepress/theme-default": "^1.5.4",
+    "druxt-blocks": "^0.5.0",
+    "druxt-entity": "^0.6.1",
+    "druxt-router": "^0.16.0",
+    "druxt-schema": "^0.5.1",
+    "md5": "^2.3.0",
+    "vuepress-plugin-live": "^1.6.0"
+  },
+  "devDependencies": {}
+}

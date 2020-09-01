@@ -1,0 +1,11 @@
+[
+  {
+    "type":"view--view",
+    "id":"6ee5e720-bbbf-4d79-b600-21ebc0d954c5",
+    "links":{
+      "self":{
+        "href":"https:\/\/example.com\/en\/jsonapi\/view\/view\/6ee5e720-bbbf-4d79-b600-21ebc0d954c5"
+      }
+    }
+  }
+]
